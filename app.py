@@ -39,8 +39,8 @@ def get_text_chunks(text):
 def get_conversation_chain(vectorstore):
     llm = ChatGroq(
         temperature=0,
-        model="microsoft/Phi-3-mini-4k-instruct",
-        api_key="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")
+        model="llama3-70b-8192",
+        api_key="")
 
     memory = ConversationBufferMemory(memory_key='chat_history',
                                       return_messages=True)
